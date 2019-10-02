@@ -1,0 +1,35 @@
+{
+  "name": "com.ethanx94.warmupreps",
+  "displayName": "Warmup-Reps",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run clean&&npm run copy",
+    "clean": "rm -rf www",
+    "copy": "cp -r ../Client/build www",
+    "build:ios": "cordova build ios",
+    "build:android": "cordova build ios"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.0.1"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
